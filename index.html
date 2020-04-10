@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="FreeCodeCamp first project, Responsive Web Design Projects - Build a Survey Form"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="HTML,CSS,FreeCodeCamp,Free,Code,Camp,Second,Project,Responsive,Web,Design,Projects,Build,Survey,Form"
+    />
+    <meta name="author" content="DreamEcho100" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>A Simple Survey Form</title>
+  </head>
+
+  <body>
+    <main>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <form method="POST">
+        <label for="name" id="name-label">Name: </label>
+        <input type="text" name="" placeholder="" id="name" class="inp-size" />
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          name=""
+          placeholder=""
+          id="email"
+          class="inp-size"
+        />
+        <label for="number" id="number-label">Number</label>
+        <input
+          type="number"
+          name="number"
+          placeholder="number"
+          id="number"
+          min="8"
+          max="64"
+          class="inp-size"
+        />
+
+        <label for="dropdown">Your Favourite Browser</label>
+        <select name="" id="dropdown" class="inp-size">
+          <option value="Chrome">Chrome</option>
+          <option value="Firefox">Firefox</option>
+          <option value="Opera">Opera</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <fieldset>
+          <legend>Choose your gender</legend>
+          <input
+            type="radio"
+            name="gender"
+            value="Male"
+            id="Male"
+            class="radiocheckboxComman"
+          />
+          <label for="Male"> Male</label>
+          <input
+            type="radio"
+            name="gender"
+            value="Female"
+            id="Female"
+            class="radiocheckboxComman"
+          />
+          <label for="Female"> Female</label>
+        </fieldset>
+
+        <p>Choose your most used languages?</p>
+        <div class="languages">
+          <div class="language">
+            <input
+              type="checkbox"
+              name="language"
+              value="Javascript"
+              id="Javascript"
+              class="radiocheckboxComman"
+            />
+            <label for="Javascript">Javascript</label>
+          </div>
+          <div class="language">
+            <input
+              type="checkbox"
+              name="language"
+              value="Paython"
+              id="Paython"
+              class="radiocheckboxComman"
+            />
+            <label for="Paython">Paython</label>
+          </div>
+          <div class="language">
+            <input
+              type="checkbox"
+              name="language"
+              value="Java"
+              id="Java"
+              class="radiocheckboxComman"
+            />
+            <label for="Java">Java</label>
+          </div>
+          <div class="language">
+            <input
+              type="checkbox"
+              name="language"
+              value="PHP"
+              id="PHP"
+              class="radiocheckboxComman"
+            />
+            <label for="PHP">PHP</label>
+          </div>
+        </div>
+
+        <textarea
+          name="textarea"
+          id="textarea"
+          cols="30"
+          rows="10"
+          class="inp-size"
+          placeholder="Additional Comments"
+        ></textarea>
+        <button id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
